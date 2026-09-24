@@ -58,7 +58,5 @@ TRAFFIC_AI_PROJECT/
 git clone https://github.com/nguyendat0374/traffic-ai-analytics.git
 cd traffic-ai-analytics
 pip install -r requirements.txt
-```
-```bash
 python main.py
 ```
