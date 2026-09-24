@@ -30,3 +30,12 @@ traffic-ai-analytics/
 ├── requirements.txt       # Danh sách thư viện và dependencies cần cài đặt
 └── README.md              # Tài liệu mô tả và hướng dẫn dự án
 ```
+### 2.2. Cấu trúc lưu trữ dữ liệu trên Google Drive (`TRAFFIC_AI_PROJECT/`)
+```text
+TRAFFIC_AI_PROJECT/
+├── 01_Docs/               # Tài liệu nghiên cứu, bài báo và báo cáo đồ án
+├── 02_Data/
+│   ├── Raw_Data/          # Video và hình ảnh gốc thu thập được
+│   └── Processed_Data/    # Dữ liệu sau khi trích xuất frame, gán nhãn
+└── 03_Models_Code/        # Lưu trữ checkpoint trọng số (.pt) và code phụ trợ
+```
