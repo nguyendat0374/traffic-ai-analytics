@@ -39,3 +39,24 @@ TRAFFIC_AI_PROJECT/
 │   └── Processed_Data/    # Dữ liệu sau khi trích xuất frame, gán nhãn
 └── 03_Models_Code/        # Lưu trữ checkpoint trọng số (.pt) và code phụ trợ
 ```
+---
+
+## 🏷️ 3. Quy Tắc Đặt Tên (Naming Conventions)
+
+| Đối tượng | Định dạng đặt tên | Ví dụ cụ thể | Ghi chú quản lý |
+| :--- | :--- | :--- | :--- |
+| **Model Trọng số** | `[Model]_[Dataset]_[Mã_Thí_nghiệm]_[Trạng_thái].pt` | `yolov8n_trafficv1_exp01_best.pt`<br>`yolov8s_trafficv2_exp02_last.pt` | Bổ sung mã dataset và thí nghiệm. **Quy tắc: Không ghi đè trọng số**. |
+| **Video Dữ liệu** | `VID_[Địa_điểm]_[Khung_giờ]_[Ngày].mp4` | `VID_NgaTuSo_08h_20260920.mp4` | Ghi rõ địa điểm, khung giờ và ngày quay. |
+| **Notebook** | `[Mã_tuần]_[Nội_dung_công_việc].ipynb` | `W01_Colab_Setup_Test.ipynb`<br>`W02_Data_Preprocessing.ipynb` | Đánh số theo tuần tiến độ đồ án. |
+| **Mã nguồn** | `[tên_chức_năng].py` *(chữ thường, gạch dưới)* | `detector.py`, `tracker.py` | Tuân thủ chuẩn PEP8. |
+
+---
+
+## 🚀 4. Hướng Dẫn Cài Đặt & Chạy Dự Án
+
+### Cài đặt môi trường
+```bash
+git clone [https://github.com/nguyendat0374/traffic-ai-analytics.git](https://github.com/nguyendat0374/traffic-ai-analytics.git)
+cd traffic-ai-analytics
+pip install -r requirements.txt
+```
