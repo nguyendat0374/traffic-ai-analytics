@@ -51,8 +51,6 @@ TRAFFIC_AI_PROJECT/
 | **Mã nguồn** | `[tên_chức_năng].py` *(chữ thường, gạch dưới)* | `detector.py`, `tracker.py` | Tuân thủ chuẩn PEP8. |
 
 ---
-
-
 ## 🚀 4. Hướng Dẫn Cài Đặt & Chạy Dự Án
 
 ### Cài đặt môi trường
