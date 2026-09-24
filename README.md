@@ -11,20 +11,22 @@
 - **Tối ưu hóa huấn luyện:** Triển khai huấn luyện và thực nghiệm trên môi trường đám mây Google Colab (GPU Tesla T4), đồng bộ dữ liệu với Google Drive.
 
 ---
-
 ## 📁 2. Cấu Trúc Thư Mục Dự Án
 
 ### 2.1. Cấu trúc mã nguồn trên GitHub
 ```text
 traffic-ai-analytics/
-├── configs/               # Các file cấu hình tham số (config.yaml, hyperparams.yaml)
+├── configs/               # File cấu hình tham số (detector.yaml, tracker.yaml)
 ├── src/                   # Mã nguồn chính của dự án
+│   ├── analytics/         # Phân tích luồng (counting.py, violation.py)
+│   ├── utils/             # Các hàm bổ trợ và tiện ích
 │   ├── __init__.py
-│   ├── detect.py          # Module phát hiện và xử lý video/hình ảnh
-│   ├── tracker.py         # Module theo dõi quỹ đạo phương tiện
-│   └── utils.py           # Các hàm bổ trợ (xử lý hình ảnh, vẽ bounding box, log)
+│   ├── detector.py        # Module phát hiện đối tượng
+│   └── tracker.py         # Module theo dõi phương tiện (tracking)
 ├── notebooks/             # Chứa các file Jupyter/Colab notebook
-├── .gitignore             # Các file/thư mục không đưa lên Git
-├── main.py                # Điểm khởi chạy chương trình (pipeline chính)
-├── requirements.txt       # Danh sách các thư viện cần thiết
-└── README.md              # Tài liệu hướng dẫn dự án
+├── .gitignore             # Danh sách file/thư mục không đưa lên Git
+├── LICENSE                # Giấy phép mã nguồn mở
+├── main.py                # Điểm khởi chạy pipeline chính
+├── requirements.txt       # Danh sách thư viện và dependencies cần cài đặt
+└── README.md              # Tài liệu mô tả và hướng dẫn dự án
+```
