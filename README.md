@@ -55,8 +55,10 @@ TRAFFIC_AI_PROJECT/
 
 ### Cài đặt môi trường
 ```bash
-git clone [https://github.com/nguyendat0374/traffic-ai-analytics.git]
-(https://github.com/nguyendat0374/traffic-ai-analytics.git)
+git clone https://github.com/nguyendat0374/traffic-ai-analytics.git
 cd traffic-ai-analytics
 pip install -r requirements.txt
+```
+```bash
+python main.py
 ```
